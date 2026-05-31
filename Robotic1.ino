@@ -1,0 +1,29 @@
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
+
+#define MIN_PULSE_WIDTH  650
+#define MAX_PULSE_WIDTH  2350
+#define FREQUENCY        50
+
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
+
+void setup() {
+  Serial.begin(9600);
+  pwm.begin();
+  pwm.setPWMFreq(FREQUENCY);
+  Serial.println("Setup done");
+}
+
+void loop() {
+  pwm.setPWM(0, 0, 133);
+  Serial.println("0 degrees");
+  delay(1000);
+
+  pwm.setPWM(0, 0, 307);
+  Serial.println("90 degrees");
+  delay(1000);
+
+  pwm.setPWM(0, 0, 481);
+  Serial.println("180 degrees");
+  delay(1000);
+}
