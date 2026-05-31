@@ -2,7 +2,7 @@
 This project is to create a robotic arm controlled by an Arduino with 5 degrees of freedom.
 
 ### Components
-- Arduino Uni
+- Arduino Uno
 - 4 Servo Motors (MG996R)
 - Servo Motor Driver (PCA9685)
 - 4 Potentiometers (10K)
