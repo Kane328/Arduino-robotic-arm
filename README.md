@@ -1,16 +1,16 @@
 # Arduino-robotic-arm
-This project is to create a robotic arm controlled by an Arduino with 5 degrees of freedom.
+A 5-DOF desktop robotic arm with potentiometer-based manual control, built with 3D printed components and Arduino.
 
 ### Components
 - Arduino Uno
-- 4 Positional Servo Motors (MG996R)
-- 1 Continuous Servo Motor
-- Force sensitive resistor (FSR)
-- Servo Motor Driver (PCA9685)
-- 4 Potentiometers (10K)
+- 4x Positional Servo Motors (MG996R)
+- 1x Continuous Servo Motor
+- 1x Force sensitive resistor (FSR)
+- 1x Servo Motor Driver (PCA9685)
+- 4x Potentiometers (10K)
 - 4V - 12V adjustable 10A DC power supply
 - 22 AWG wires
-- button
+- 1x Button
 
 Main body components are 3D printed. Files included.
 
@@ -23,12 +23,13 @@ The gripper is powered by a continuous rotation servo, activated by a push butto
 Power is supplied through an external adjustable DC power supply connected directly to the PCA9685's power rail, keeping servo current draw off the Arduino entirely.
 
 ## Wiring Diagram
-  TBA
+<img width="3000" height="1897" alt="circuit_image" src="https://github.com/user-attachments/assets/cf354cf9-090c-49d7-ae46-635d76a43abd" />
+
 ## Known Issues
   TBA
 
 ## Future Improvements/Additions
 - Apply Inverse Kinematics for independent movement
 - Visual detection to pick up objects on its own
-- Different kinds of arms
+- Modular end effector system for swappable gripper types
 
