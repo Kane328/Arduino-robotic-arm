@@ -1,15 +1,11 @@
 void setup() {
   Serial.begin(9600);
   Serial.println("FSR Calibration Test");
-  Serial.println("Pinch the FSR with different forces and note the values");
-  Serial.println("----------------------------------------------------------");
 }
 
 void loop() {
   int fsrRaw = analogRead(A5);  // raw 0-1023
-  
-  // Convert to voltage
-  float voltage = fsrRaw * (5.0 / 1023.0);
+  float voltage = fsrRaw * (5.0 / 1023.0);   // Convert to voltage
   
   // Estimate force
   float force = 0;
