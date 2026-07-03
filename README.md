@@ -1,5 +1,6 @@
 # Arduino-robotic-arm
 A 5-DOF desktop robotic arm with potentiometer-based manual control, built with 3D printed components and Arduino.
+<img width="626" height="724" alt="Screenshot 2026-07-02 104837" src="https://github.com/user-attachments/assets/196ca896-08b9-46f6-851d-6be5358c5c60" />
 
 ### Components
 - Arduino Uno
@@ -12,7 +13,7 @@ A 5-DOF desktop robotic arm with potentiometer-based manual control, built with 
 - 22 AWG wires
 - 1x Button
 
-Main body components are 3D printed. Files included.
+Main body components are 3D printed.
 
 ### How it Works
 The arm has 5 degrees of freedom, with each joint independently controlled by a dedicated MG996R positional servo motor. Each servo is mapped to a potentiometer, so rotating the potentiometer causes the corresponding servo to move proportionally, allowing intuitive manual control of the arm.
