@@ -23,10 +23,10 @@ The gripper is powered by a continuous rotation servo, activated by a push butto
 Power is supplied through an external adjustable DC power supply connected directly to the PCA9685's power rail, keeping servo current draw off the Arduino entirely.
 
 ## Wiring Diagram
-<img width="3000" height="1897" alt="circuit_image" src="https://github.com/user-attachments/assets/cf354cf9-090c-49d7-ae46-635d76a43abd" />
+<img width="1198" height="738" alt="Screenshot 2026-07-01 215328" src="https://github.com/user-attachments/assets/497bc561-188b-4f62-9e2d-d5f547a961ac" />
 
 ## Known Issues
-  TBA
+- **Controller** — The controller is slightly out of sync with the arm.
 
 ## Future Improvements/Additions
 - Apply Inverse Kinematics for independent movement
