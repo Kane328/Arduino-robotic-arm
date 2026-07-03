@@ -1,7 +1,12 @@
 # Arduino-robotic-arm
+
+<div align="center">
+
 A 5-DOF desktop robotic arm with potentiometer-based manual control, built with 3D printed components and Arduino.
+
 <img width="626" height="724" alt="Screenshot 2026-07-02 104837" src="https://github.com/user-attachments/assets/196ca896-08b9-46f6-851d-6be5358c5c60" />
 
+</div>
 ### Components
 - Arduino Uno
 - 4x Positional Servo Motors (MG996R)
