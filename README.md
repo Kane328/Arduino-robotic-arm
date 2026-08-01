@@ -6,7 +6,7 @@ A 5-DOF desktop robotic arm with potentiometer-based manual control, built with 
 </div>
 
 ---
-### Components
+## Components
 - Arduino Uno
 - Positional Servo Motors (MG996R) (x4)
 - Continuous Servo Motor (x1)
@@ -19,7 +19,7 @@ A 5-DOF desktop robotic arm with potentiometer-based manual control, built with 
 Main body components are 3D printed on Creality K2 using PLA.
 
 ---
-### How it Works
+## How it Works
 The arm has 5 degrees of freedom, with each joint independently controlled by a dedicated MG996R positional servo motor. Each servo is mapped to a potentiometer, so rotating the potentiometer causes the corresponding servo to move proportionally, allowing intuitive manual control of the arm.
 
 All servos are driven through a PCA9685 16-channel PWM servo driver, which communicates with the Arduino via I2C using only two pins (SDA and SCL). This allows all motors to be controlled simultaneously without consuming the Arduino's limited PWM pins.
