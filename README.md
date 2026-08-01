@@ -5,19 +5,20 @@ A 5-DOF desktop robotic arm with potentiometer-based manual control, built with 
 <img width="626" height="724" alt="Screenshot 2026-07-02 104837" src="https://github.com/user-attachments/assets/196ca896-08b9-46f6-851d-6be5358c5c60" />
 </div>
 
+---
 ### Components
 - Arduino Uno
-- 4x Positional Servo Motors (MG996R)
-- 1x Continuous Servo Motor
-- 1x Force sensitive resistor (FSR)
-- 1x Servo Motor Driver (PCA9685)
-- 4x Potentiometers (10K)
+- Positional Servo Motors (MG996R) (x4)
+- Continuous Servo Motor (x1)
+- Force sensitive resistor (FSR) (x1)
+- Servo Motor Driver (PCA9685) (x1)
+- Potentiometers (10K) (x4)
 - 4V - 12V adjustable 10A DC power supply
-- 22 AWG wires
-- 1x Button
+- Misc. electrical components (wires, connectors, capacitor)
 
-Main body components are 3D printed.
+Main body components are 3D printed on Creality K2 using PLA.
 
+---
 ### How it Works
 The arm has 5 degrees of freedom, with each joint independently controlled by a dedicated MG996R positional servo motor. Each servo is mapped to a potentiometer, so rotating the potentiometer causes the corresponding servo to move proportionally, allowing intuitive manual control of the arm.
 
@@ -26,10 +27,12 @@ The gripper is powered by a continuous rotation servo, activated by a push butto
 
 Power is supplied through an external adjustable DC power supply connected directly to the PCA9685's power rail, keeping servo current draw off the Arduino entirely.
 
+---
 ## Wiring Diagram
 <img width="1198" height="738" alt="Screenshot 2026-07-01 215328" src="https://github.com/user-attachments/assets/497bc561-188b-4f62-9e2d-d5f547a961ac" />
 
-## Known Issues
+---
+## Known Limitations
 - **Controller** — The controller is slightly out of sync with the arm.
 
 ## Future Improvements/Additions
